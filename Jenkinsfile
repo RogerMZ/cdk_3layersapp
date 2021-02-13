@@ -33,7 +33,7 @@ pipeline {
 
     stage('Run Container') {
       steps {
-        sh 'docker run proyapi -itd --rm -p 3000:3000 rogermz/app3layer:3.1 '
+        sh 'docker run --name proyapi -itd --rm -p 3000:3000 rogermz/app3layer:3.1 '
         sh 'docker ps'
       }
     }
