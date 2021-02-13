@@ -8,5 +8,11 @@ pipeline {
       }
     }
 
+    stage('docker Env') {
+      steps {
+        sh 'docker -v'
+      }
+    }
+
   }
 }
