@@ -8,6 +8,5 @@ RUN pip install -r dependences.txt
 
 EXPOSE 3000
 
-#CMD ["python", "WebService.py"]
-CMD ["python", "app_redis.py"]
+CMD ["python", "WebService.py"]
 
